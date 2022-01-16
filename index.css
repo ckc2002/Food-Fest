@@ -130,7 +130,7 @@ p {
   padding: 40px;
 }
 
-.btn {
+.btn_order {
   font-family: "Noto Serif", serif;
   width: 160px;
   padding: 6px 12px;
@@ -143,7 +143,7 @@ p {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn_order:hover {
   background-color: white;
   color: black;
   font-weight: 600;
@@ -247,7 +247,7 @@ p {
   margin-top: 10px;
 }
 
-.row {
+.row1 {
   display: flex;
   margin: 30px 50px 0px 50px;
   padding-bottom: 40px;
@@ -285,6 +285,182 @@ p {
 .icon-color {
   font-size: 20px;
   color: #f5931f;
+}
+
+#Review {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+#Review h1 {
+  text-align: center;
+}
+
+.text_area {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.input_form {
+  width: 33rem;
+}
+
+.review_input {
+  font-family: "Inter", sans-serif;
+  color: #555;
+  margin-bottom: 20px;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #c6ffdd;
+  outline: none;
+  width: 500px;
+  background: transparent;
+  box-shadow: 5px 5px 15px -5px rgb(0 0 0 / 30%);
+}
+
+.review_input:hover {
+  box-shadow: 5px 5px 15px -5px gray;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+  /* color: #e2e2e2; */
+  font-weight: normal;
+}
+
+#review_btn {
+  margin-left: -4px;
+  padding: 15.5px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  text-transform: capitalize;
+  box-shadow: 5px 5px 15px -5px rgb(0, 0, 0, 0.3);
+  min-height: 47.5px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#review_btn:hover {
+  background: linear-gradient(to left, #11998e, #38ef7d);
+  color: white;
+}
+
+/* background: linear-gradient(to right, #11998e, #38ef7d);
+---background: linear-gradient(to right, #f2994a, #f2c94c);
+background: linear-gradient(to right, #fd746c, #ff9068);
+*/
+
+.review-label {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 14px;
+}
+
+.noteCard {
+  width: 16.2rem;
+}
+
+.noteCard:nth-child(even) {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
+.noteCard:nth-child(3n + 1) {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.noteCard:nth-child(odd) {
+  background: linear-gradient(to right, #fd746c, #ff9068);
+}
+
+.row {
+  margin-top: 20px;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: calc(var(--bs-gutter-y) * -1); */
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.style {
+  color: #000;
+}
+
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.mx-2 {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.card-title {
+  font-family: "Roboto Slab", serif;
+  /* color: #555; */
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-family: "Noto Serif", serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.btn_review {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.review_icon {
+  font-size: 20px;
+}
+
+.review_icon:hover {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  color: red;
 }
 
 #contactUs {
